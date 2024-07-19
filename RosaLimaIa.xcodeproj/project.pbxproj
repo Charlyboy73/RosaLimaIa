@@ -13,6 +13,8 @@
 		C10496E22C495E65008C7F9B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C10496E12C495E65008C7F9B /* Preview Assets.xcassets */; };
 		C10496EA2C499048008C7F9B /* SearchBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C10496E92C499048008C7F9B /* SearchBarView.swift */; };
 		C10496EC2C49933B008C7F9B /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C10496EB2C49933B008C7F9B /* MainView.swift */; };
+		C18B3CBC2C4AA83F006C4CC7 /* CapturingAudioView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C18B3CBB2C4AA83F006C4CC7 /* CapturingAudioView.swift */; };
+		C18DF66F2C4A16B300AED244 /* SpeaktoText.swift in Sources */ = {isa = PBXBuildFile; fileRef = C18DF66E2C4A16B300AED244 /* SpeaktoText.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +25,9 @@
 		C10496E12C495E65008C7F9B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		C10496E92C499048008C7F9B /* SearchBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBarView.swift; sourceTree = "<group>"; };
 		C10496EB2C49933B008C7F9B /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		C18B3CBB2C4AA83F006C4CC7 /* CapturingAudioView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CapturingAudioView.swift; sourceTree = "<group>"; };
+		C18DF66E2C4A16B300AED244 /* SpeaktoText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeaktoText.swift; sourceTree = "<group>"; };
+		C18DF6702C4A170600AED244 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +60,8 @@
 		C10496D92C495E64008C7F9B /* RosaLimaIa */ = {
 			isa = PBXGroup;
 			children = (
+				C18DF6702C4A170600AED244 /* Info.plist */,
+				C18DF66D2C4A168B00AED244 /* AudioService */,
 				C10496E82C49900B008C7F9B /* Views */,
 				C10496DA2C495E64008C7F9B /* RosaLimaIaApp.swift */,
 				C10496DC2C495E64008C7F9B /* ContentView.swift */,
@@ -77,8 +84,17 @@
 			children = (
 				C10496EB2C49933B008C7F9B /* MainView.swift */,
 				C10496E92C499048008C7F9B /* SearchBarView.swift */,
+				C18B3CBB2C4AA83F006C4CC7 /* CapturingAudioView.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		C18DF66D2C4A168B00AED244 /* AudioService */ = {
+			isa = PBXGroup;
+			children = (
+				C18DF66E2C4A16B300AED244 /* SpeaktoText.swift */,
+			);
+			path = AudioService;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -154,7 +170,9 @@
 				C10496DD2C495E64008C7F9B /* ContentView.swift in Sources */,
 				C10496EC2C49933B008C7F9B /* MainView.swift in Sources */,
 				C10496EA2C499048008C7F9B /* SearchBarView.swift in Sources */,
+				C18DF66F2C4A16B300AED244 /* SpeaktoText.swift in Sources */,
 				C10496DB2C495E64008C7F9B /* RosaLimaIaApp.swift in Sources */,
+				C18B3CBC2C4AA83F006C4CC7 /* CapturingAudioView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -291,6 +309,7 @@
 				DEVELOPMENT_TEAM = YRPGZ4J32C;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = RosaLimaIa/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -320,6 +339,7 @@
 				DEVELOPMENT_TEAM = YRPGZ4J32C;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = RosaLimaIa/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;

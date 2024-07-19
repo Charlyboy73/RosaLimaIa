@@ -11,7 +11,7 @@ import SwiftUI
 struct RosaLimaIaApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            MainView()
         }
     }
 }
